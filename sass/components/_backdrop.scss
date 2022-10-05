@@ -1,0 +1,24 @@
+/**
+  |============================
+  | block 21
+  |============================
+*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), visibility 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}

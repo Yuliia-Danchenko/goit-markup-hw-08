@@ -1,0 +1,54 @@
+/**
+  |============================
+  | block 13
+  |============================
+*/
+
+.section-team {
+    padding-bottom: 83px;
+    background-color: var(--main-bgc-comand);
+    @include section;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-about {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--main-color-white);
+}
+
+.team-person {
+    margin-bottom: 10px;
+    color: var(--main-color-accent);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-title {
+    margin-bottom: 50px;
+    color: var(--main-color-accent);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

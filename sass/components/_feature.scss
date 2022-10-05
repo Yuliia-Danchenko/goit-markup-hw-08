@@ -1,0 +1,44 @@
+/**
+  |============================
+  | block 11
+  |============================
+*/
+
+.section {
+@include section;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-list-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.feature-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--main-bgc-comand);
+    border-radius: 4px;
+}
+
+.feature-title {
+    margin-bottom: 10px;
+    color: var(--main-color-accent);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+}

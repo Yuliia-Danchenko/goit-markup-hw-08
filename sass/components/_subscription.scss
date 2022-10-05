@@ -1,0 +1,58 @@
+/**
+  |============================
+  | block 17
+  |============================
+*/
+
+.subscription-title {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color-white);
+}
+
+.subscription-label {
+    display: flex;
+}
+
+.subscription-input {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--main-bgc);
+}
+
+.subscription-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-color-blue);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: var(--main-color-white);
+    text-align: left;
+    cursor: pointer;
+}
+
+.subscription-icon {
+    display: block;
+    fill: var(--main-color-white);
+}
+
+.subscription-logo {
+    display: block;
+    margin-right: 10px;
+}
