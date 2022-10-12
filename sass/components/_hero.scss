@@ -5,8 +5,8 @@
 */
 
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -15,39 +15,60 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: var(--main-color-hero);
 
-    &__title {
-        margin-bottom: 30px;
-        color: var(--main-color-white);
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
     }
 
-    &__btn {
-        padding-top: 10px;
-        padding-right: 32px;
-        padding-bottom: 10px;
-        padding-left: 32px;
-        border: transparent;
-        border-radius: 4px;
-        background-color: var(--main-color-blue);
-        color: var(--main-color-white);
-        cursor: pointer;
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        text-align: center;
-        letter-spacing: 0.06em;
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.hero__title {
+    margin-bottom: 30px;
+    color: var(--main-color-white);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
+}
+
+.hero__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border: transparent;
+    border-radius: 4px;
+    background-color: var(--main-color-blue);
+    color: var(--main-color-white);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        padding-right: 32px;
+        padding-left: 32px;
     }
 }
 

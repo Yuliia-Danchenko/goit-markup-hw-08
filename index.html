@@ -28,8 +28,8 @@
           <a lang="en" href="./index.html" class="logo logo__header links">
             Web<span class="logo__header--black">Studio</span>
           </a>
-          <!-- Header nav -->
-          <ul class="site-nav">
+    <!-- Header nav -->
+    <!-- <ul class="site-nav">
             <li class="site-nav__item list">
               <a href="./index.html" class="site-nav__link current links">Студія</a>
             </li>
@@ -40,9 +40,9 @@
               <a href="" class="site-nav__link links">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <!-- Header contacts -->
-        <ul class="contacts list">
+        </nav> -->
+    <!-- Header contacts -->
+    <!-- <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link links">
               <svg class="contacts__icon" width="16" height="12">
@@ -58,11 +58,19 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
+        <button class="menu-btn js-open-menu"
+        type="button" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu_open">
+            </svg>
+          </svg>
+        </button>
       </div>
     </header>
+    <!--Hero-->
     <main>
-      <!--Hero-->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
@@ -200,36 +208,38 @@
       </div>
     </section>
     <!--Діяльність-->
-    <section class="section section--no-pt">
-      <div class="container">
-        <h2 class="section__title">Чим ми займаємося</h2>
-        <ul class="work list">
-          <li class="work__item">
-            <div class="work__box">
-              <img src="./images/img-1.jpg" alt="Написання сайтів" width="370" height="294" />
-              <p class="work__title">Десктопні додатки</p>
-            </div>
-          </li>
-          <li class="work__item">
-            <div class="work__box">
-              <img
-                src="./images/img-2.jpg"
-                alt="Написання мобільних додатків"
-                width="370"
-                height="294"
-              />
-              <p class="work__title">Мобільні додатки</p>
-            </div>
-          </li>
-          <li class="work__item">
-            <div class="work__box">
-              <img src="./images/img-3.jpg" alt="Дизайн" width="370" height="294" />
-              <p class="work__title">Дизайнерські рішення</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="hide-on-mobile-tab">
+      <section class="section section--no-pt">
+        <div class="container">
+          <h2 class="section__title">Чим ми займаємося</h2>
+          <ul class="work list">
+            <li class="work__item">
+              <div class="work__box">
+                <img src="./images/img-1.jpg" alt="Написання сайтів" width="370" height="294" />
+                <p class="work__title">Десктопні додатки</p>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="work__box">
+                <img
+                  src="./images/img-2.jpg"
+                  alt="Написання мобільних додатків"
+                  width="370"
+                  height="294"
+                />
+                <p class="work__title">Мобільні додатки</p>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="work__box">
+                <img src="./images/img-3.jpg" alt="Дизайн" width="370" height="294" />
+                <p class="work__title">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <!--Наша команда-->
     <section class="section-team">
       <div class="container">
@@ -661,7 +671,31 @@
           </form>
         </div>
       </div>
+
+      <!-- Modale menu -->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40"
+        ><use href="./images/icons.svg#menu_close"></use></svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

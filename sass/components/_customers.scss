@@ -3,29 +3,46 @@
   | block 15
   |============================
 */
-
+.section {
+    @media screen and (min-width: 1200px) {
+        @include section (94px);
+    }
+}
 .section__title {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--main-color-accent);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+    
 }
 
 .customers {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-}
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+    }
+
 
 .customers__link {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--socials-icon-color);
     border-radius: 4px;
@@ -35,6 +52,14 @@
     &:hover,
     &:focus {
         border: 1px solid var(--main-color-blue);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 220px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 

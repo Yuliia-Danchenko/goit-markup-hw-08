@@ -11,5 +11,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+.hide-on-mobile-tab {
+  display: inline;
+}
+
+@media only screen and (max-device-width : 1199px) {
+  .hide-on-mobile-tab {
+    display: none;
+  }
+}
 
 

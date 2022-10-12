@@ -6,23 +6,49 @@
 
 .footer {
     display: flex;
-    justify-content: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--main-bgc);
+
+    @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    }
 }
 
 .container-footer {
-    display: flex;
+    
+    @media screen and (min-width: 1200px) {
+    display: flex;    
     align-items: baseline;
+    }
 }
 
 .adrress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
-    margin: 0;
+    margin-bottom: 60px;
     padding: 0;
-    justify-content: flex-start;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 165px;
+    }
+
+
+/**
+  |============================
+  | 
+  |============================
+*/
+    @media screen and (min-width: 768px) {
+    display: inline-block;   
+    }
+
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    align-items: start;
+    }
 }
 
 .footer-address {
@@ -41,10 +67,19 @@
 }
 
 .footer-address-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+    display: block;
+
     margin-bottom: 9px;
+    }
 
 &:last-child {
     margin-bottom: 0;
+    
 }
 }
 
@@ -64,20 +99,47 @@
 }
 
 .footer-socials {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+/**
+  |============================
+  | 
+  |============================
+*/
+    @media screen and (min-width: 768px) {
+    display: inline-block;
+    
+    }
+    
+    @media screen and (min-width: 1200px) {
+    margin-right: 93px;    
+    }
+    
 }
 
 .footer-socials-title {
+    display: flex;
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.14;
     color: var(--main-color-white);
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            justify-content: center;
+        }
 }
 
 .footer-socials-list {
     display: flex;
     gap: 10px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;    
+    }
 }
 
 .footer-socials-item {

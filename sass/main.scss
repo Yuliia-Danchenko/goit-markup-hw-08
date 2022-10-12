@@ -2,6 +2,8 @@
 
 @import "./utils/variables";
 
+@import "./utils/normalize";
+
 @import "./utils/visually-hidden";
 
 @import "./utils/mixins";
@@ -22,6 +24,8 @@
 @import "./components/header-nav";
 
 @import "./components/header-contacts";
+
+@import "./components/menu";
 
 @import "./components/hero";
 

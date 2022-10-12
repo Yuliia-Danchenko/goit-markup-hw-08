@@ -11,6 +11,11 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+@media screen and (min-width: 480px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}    
 }
 
 .logo__header--black {
@@ -19,12 +24,16 @@
 
 .logo__footer {
     margin-bottom: 20px;
-    display: block;
+    display: flex;
     color: var(--main-color-blue);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+}
 }
 
 .logo__footer--white {

@@ -4,9 +4,30 @@
   |============================
 */
 .container {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+// BREAKPOINTS:
+// mobile - 480 px
+// tablet - 768 px
+// desktop - 1200 px
+
+// mobile styles 480 px
+
+  max-width: 480px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+
+// tablet styles 768 px
+
+@media screen and (min-width: 768px) {
+  max-width: 768px;
+}
+
+// desktop styles 1200 px
+
+@media screen and (min-width: 1200px) {
+  max-width: 1200px;
+}
 }

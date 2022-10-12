@@ -6,6 +6,10 @@
 
 .section {
 @include section;
+
+@media screen and (min-width: 1200px) {
+    @include section (94px);
+}
 }
 
 .feature-list {
@@ -15,7 +19,14 @@
 }
 
 .feature-list-item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - var(--indent) * (2 - 1)) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    }
 }
 
 .feature-icons {
@@ -29,6 +40,7 @@
 }
 
 .feature-title {
+    text-align: center;
     margin-bottom: 10px;
     color: var(--main-color-accent);
     font-weight: 700;
@@ -36,6 +48,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+        text-align: left;
+    }
 }
 
 .feature-text {
